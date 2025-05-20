@@ -23,9 +23,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6739442523:AAHHA5HZmU6sqI-elmhTs8dwHqfhTizWwnQ",
-             api_id=22609670,
-             api_hash= "3506d8474ad1f4f5e79b7c52a5c3e88d")
+             bot_token= "8151035412:AAGnfaXf0-gUKtVdaPU-kUZC-VcPaJC0AA8",
+             api_id=25967358,
+             api_hash= "10a5a31171dfdc323efdbcf84a8fb016")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id,document=f'{name}.pdf', caption=cc1)
-                        await copy.copy(chat_id = -1002070057679)
+                        await copy.copy(chat_id = -1002452084505)
                         count += 1
                         os.remove(f'{name}.pdf')
                     except FloodWait as e:
